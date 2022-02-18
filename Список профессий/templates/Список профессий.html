@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+
+<font size="+6">Список профессий</font>
+{% if par == 'ol' %}
+    <ol>
+{% elif par == 'ul' %}
+    <ul>
+{% endif %}
+{% for i in prof %}
+    <li>{{i}}</li>
+{% endfor %}
+{% if par == 'ol' %}
+    </ol>
+{% elif par == 'ul' %}
+    </ul>
+{% endif %}
+{% if par not in ['ol', 'ul'] %}
+    Недопустимое значение параметра
+{% endif %}
+{% endblock %}
