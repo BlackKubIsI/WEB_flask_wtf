@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+
+<div align="center"><font size="+5">{{astronaut["name"]}} {{astronaut["surname"]}}</font></div>
+<div align="center"><img src={{astronaut["image"]}}></div>
+<div align="center">{{astronaut["specialties"]|sort|join(", ")}}</div>
+{% endblock %}
