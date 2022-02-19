@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+    {% for i in NAMES %}
+        <h4>{{i}}: {{ ANSWERS[loop.index0] }}</h4>
+    {% endfor %}
+{% endblock %}
