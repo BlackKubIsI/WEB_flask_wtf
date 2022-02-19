@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+
+<h3><img src="../static/img/img.png" class="imgsize">Аварийный доступ</h3>
+<br>
+<form method="post">
+    <div class="bg-info text-white">
+        <br>
+        <input name="id_as" class="form-control" type="text" placeholder="id астронавта">
+        <br>
+        <input name="pas_as" class="form-control" type="text" placeholder="Пароль астронавта">
+        <br>
+        <input name="id_cap" class="form-control" type="text" placeholder="id капитана">
+        <br>
+        <input name="pas_cap" class="form-control" type="text" placeholder="Пароль капитана">
+        <br>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-outline-success">Success</button>
+</form>
+{% endblock %}
